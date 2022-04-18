@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="oyunPanelDash" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="783.0" prefWidth="1163.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="20.0" layoutY="14.0" text="KALAN SÜRE :" textFill="#bf1919">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="puanLabel" layoutX="1060.0" layoutY="14.0" text="125" textFill="#231eb2">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="294.0" layoutY="17.0" text="sn.">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="harfAlButton" layoutX="433.0" layoutY="544.0" mnemonicParsing="false" onAction="#harfAl" prefHeight="72.0" prefWidth="310.0" text="HARF ALAYIM" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+      <Label fx:id="oyunBittiLabel" layoutX="348.0" layoutY="321.0" text="OYUN BİTTİ" textFill="#ff0702">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+      <BorderPane fx:id="soruPanel" layoutX="239.0" layoutY="119.0" prefHeight="200.0" prefWidth="686.0" style="-fx-background-color: FF5733;" AnchorPane.topAnchor="119.0">
+         <center>
+            <Label fx:id="soruLabel" alignment="CENTER" prefHeight="161.0" prefWidth="629.0" text="Futbolda hem orta yuvarlak hem başlama vuruşu anlamlarına gelen söz" wrapText="true" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <Label fx:id="kelimeLabel" alignment="CENTER" layoutX="239.0" layoutY="332.0" prefHeight="96.0" prefWidth="686.0" text="_ A _ _ _ _" textFill="#363131">
+         <font>
+            <Font size="66.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tahminInput" layoutX="389.0" layoutY="428.0" prefHeight="90.0" prefWidth="397.0" promptText="Tahmin gir">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </TextField>
+      <Label layoutX="925.0" layoutY="14.0" text="PUAN :" textFill="#bf1919">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="sureLabel" layoutX="239.0" layoutY="14.0" text="240" textFill="#231eb2">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="zamanDurdurButton" layoutX="433.0" layoutY="630.0" mnemonicParsing="false" onAction="#zamanDurdur" text="ZAMAN DURDUR" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+      <Button fx:id="tahminOnaylaButon" layoutX="433.0" layoutY="580.0" mnemonicParsing="false" onAction="#tahminOnayla" text="TAHMİN ONAYLA" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+      <Label layoutX="540.0" layoutY="64.0" text=".SORU" textFill="#bf1919">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="soruSayisiLabel" layoutX="503.0" layoutY="64.0" text="1" textFill="#231eb2">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
